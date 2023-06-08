@@ -12,6 +12,9 @@ public class MVCFlowerShopContext : IdentityDbContext<MVCFlowerShopUser>
     {
     }
 
+    public DbSet<MVC_FlowerShop.Models.Flower> Flower { get; set; }
+
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

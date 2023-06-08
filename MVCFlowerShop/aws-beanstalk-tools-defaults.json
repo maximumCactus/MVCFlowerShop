@@ -1,0 +1,22 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "net6.0",
+    "self-contained" : false,
+    "application"    : "MVCFlowerShopTP055396",
+    "environment"    : "MVCFlowerShopTP055396-test",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-0b06edae33b42bef9,sg-00d83d123e8c0996a\";\"aws:ec2:vpc,Subnets\"=\"subnet-0b968de49e30488a3\";\"aws:ec2:vpc,ELBSubnets\"=\"subnet-0b968de49e30488a3,subnet-07605a129c94b6031,subnet-09620793369d6f5ad,subnet-0336e83e80c6e4fb7,subnet-05b7784da18d79d42,subnet-0c8c8377c21d7a67e\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.5.4 running .NET Core",
+    "environment-type"     : "LoadBalanced",
+    "loadbalancer-type"    : "application",
+    "cname"                : "mvcflowershop-tp055396-test",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "phpexample",
+    "health-check-url"     : "/",
+    "instance-profile"     : "LabInstanceProfile",
+    "service-role"         : "LabRole",
+    "proxy-server"         : "nginx"
+}
