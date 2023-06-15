@@ -11,11 +11,11 @@ namespace MVC_FlowerShop.Models
 
         [Required]
         [Display(Name = "Flower Name")]
-        public String FlowerName { get; set; }
+        public string FlowerName { get; set; }
 
         [Required]
         [Display(Name = "Flower Type")]
-        public String FlowerType { get; set; }
+        public string FlowerType { get; set; }
 
 
         [Required]
