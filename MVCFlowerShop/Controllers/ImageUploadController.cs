@@ -52,10 +52,10 @@ namespace MVCFlowerShop.Controllers
                 {
                     return BadRequest("File of " + singleimage.FileName + " is no content");
                 }
-                // Is more than 1MB
-                else if (singleimage.Length >= 1048546)
+                // Is more than 5MB
+                else if (singleimage.Length >= 5242730)
                 {
-                    return BadRequest("File of " + singleimage.FileName + " is more than 1MB! Please try again!");
+                    return BadRequest("File of " + singleimage.FileName + " is more than 5MB! Please try again!");
                 }
                 else if (singleimage.ContentType.ToLower() != "image/png" && singleimage.ContentType.ToLower() != "image/jpg" && singleimage.ContentType.ToLower() != "image/jpeg") {
                     return BadRequest("File of " + singleimage.FileName + " is not a valid image file");

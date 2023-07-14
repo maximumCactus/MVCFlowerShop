@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "processSubscription";
+}
+
+<center>
+    <h1>Congrats! You've successfully subscribed to our newsletter!</h1>
+    <p>Please check your email to confirm the subscription.</p>
+    <p><i>Your subscription ID is: @ViewBag.subscriptionSuccessID</i></p>
+    <a asp-action="Index" asp-controller="SNSExample">
+        <button class="btn-info">Back to subscription page</button>
+    </a>
+<center>
+
+

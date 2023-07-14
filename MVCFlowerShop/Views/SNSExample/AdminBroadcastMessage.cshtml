@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "AdminBroadcastMessage";
+}
+
+<center>
+    <h1>Sample for admin use to broadcast message to subscriber email</h1>
+    <br /><hr /><br />
+    <form asp-action="processBroadcast" asp-controller="SNSExample">
+        <label>Email Subject Title</label>
+        &nbsp; &nbsp;         
+        <input type="text" name="subjectTitle" placeholder="e.g. Shop close on next monday">
+         <br /><br />
+        <label>Message Body Content</label>
+        <br /><br />
+        <textarea name="messageBody" rows="10" cols="150"></textarea>
+        <button type="submit" class="btn-info">Submit</button>
+    </form>
+</center>
+
